@@ -1,0 +1,17 @@
+mybatis:
+  configlocation: mybatis-config.xml
+  mapper-locations: /com/zhuimeng/mapper/**.xml
+  type-aliases-package: com.zhuimeng.pojo
+server:
+  port: 8088
+spring:
+  datasource:
+    driverclassname: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.56.102:3306/test?characterEncoding=utf-8
+    username: root
+    password: ......
+zhuimeng:
+  security:
+    browser:
+      loginPage: /login
+      loginType: JSON
